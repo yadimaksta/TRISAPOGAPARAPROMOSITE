@@ -7,89 +7,6 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <style media="screen">
-      body, html {
-        overflow: hidden;
-        background-color: white;
-        width: 100vw;
-        height: 100vh;
-        display: block;
-        position: relative;
-        -webkit-user-select: none;
-        -khtml-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        -o-user-select: none;
-        user-select: none;
-      }
-      .index-h1 {
-        position: absolute;
-        left: 20px;
-        bottom: 0px;
-        font-family: 'Helvetica';
-        font-size: 720px;
-        line-height: 80%;
-        letter-spacing: -0.02em;
-        color: #FD4E2B;
-        white-space: nowrap;
-        animation: index-h1-move 12s linear infinite;
-      }
-      .menu {
-        z-index: 1000;
-      }
-      .logo {
-        position: absolute;
-        display: flex;
-        padding: 8px 9px;
-        left: 20px;
-        top: 20px;
-        background: #FD4E2B;
-        border-radius: 8px;
-      }
-      .logo:hover {
-        background: #666666;
-        cursor: pointer;
-      }
-      .logo:active {
-        background: #000000;
-        cursor: pointer;
-      }
-      .menu-buttons:hover {
-        background: #666666;
-        cursor: pointer;
-      }
-      .menu-buttons:active {
-        background: #000000;
-        cursor: pointer;
-      }
-      .menu-center {
-        position: absolute;
-        display: flex;
-        top: 20px;
-        left: 50%;
-        transform: translateX(-50%);
-      }
-      .menu-buttons {
-        display: flex;
-        padding: 8px 10px;
-        font-family: 'Helvetica';
-        font-size: 18px;
-        line-height: 82%;
-        color: #FFFFFF;
-        background: #FD4E2B;
-        border-radius: 8px;
-        margin-left: 6px;
-      }
-      .menu-mini-game {
-        top: 20px;
-        position: absolute;
-        right: 20px;
-      }
-      @keyframes index-h1-move {
-        0% {left: 20px}
-        100% {left: -4975px}
-      }
-    </style>
   </head>
   <body>
     <!-- МЕНЮ -->
@@ -106,13 +23,13 @@
         </svg>
       </div>
       <div class="menu-center">
-        <div class="menu-buttons menu-center-buttons-1">
+        <div class="menu-buttons menu-center-buttons-1" onclick="window.location.replace('items.html')">
           каталог
         </div>
-        <div class="menu-buttons menu-center-buttons-2">
+        <div class="menu-buttons menu-center-buttons-2" onclick="window.location.replace('guide.html')">
           магазин
         </div>
-        <div class="menu-buttons menu-center-buttons-3">
+        <div class="menu-buttons menu-center-buttons-3" onclick="window.location.replace('events.html')">
           события
         </div>
       </div>

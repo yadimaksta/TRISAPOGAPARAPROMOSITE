@@ -14,37 +14,44 @@ body, html {
   user-select: none;
 }
 
+
+
 /* МЕНЮ */
 .menu {
   z-index: 1000;
 }
 .logo {
-  position: absolute;
+  position: fixed;
   display: flex;
   padding: 8px 9px;
   left: 20px;
   top: 20px;
   background: #FD4E2B;
   border-radius: 8px;
+  transition: 0.05s ease-in-out;
 }
 .logo:hover {
   background: #666666;
   cursor: pointer;
+  transition: 0.05s ease-in-out;
 }
 .logo:active {
   background: #000000;
   cursor: pointer;
+  transition: 0.01s ease-in-out;
 }
 .menu-buttons:hover {
   background: #666666;
   cursor: pointer;
+  transition: 0.05s ease-in-out;
 }
 .menu-buttons:active {
   background: #000000;
   cursor: pointer;
+  transition: 0.01s ease-in-out;
 }
 .menu-center {
-  position: absolute;
+  position: fixed;
   display: flex;
   top: 20px;
   left: 50%;
@@ -60,18 +67,21 @@ body, html {
   background: #FD4E2B;
   border-radius: 8px;
   margin-left: 6px;
+  transition: 0.05s ease-in-out;
 }
 .menu-mini-game {
+  position: fixed;
   top: 20px;
-  position: absolute;
   right: 20px;
 }
+
+
 
 /* ГЛАВНАЯ */
 .index-h1 {
   position: absolute;
   left: 20px;
-  bottom: 0px;
+  bottom: -6px;
   font-family: 'Helvetica';
   font-size: 720px;
   line-height: 80%;
@@ -83,4 +93,142 @@ body, html {
 @keyframes index-h1-move {
   0% {left: 20px}
   100% {left: -4975px}
+}
+
+
+
+/* КАТАЛОГ */
+.items-section {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  overflow-x: hidden;
+}
+.items-section1 {
+  display: flex;
+  flex-direction: row;
+  gap: 68px;
+  height: calc(50vh - 20px);
+  align-items: flex-end;
+  /* overflow-x: scroll; */
+}
+.collection-block {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: flex-end;
+  padding-bottom: 28px;
+  color: #FD4E2B;
+  fill: #FD4E2B;
+  transition: 0.05s ease-in-out;
+}
+.collection-block:hover {
+  color: #666666;
+  fill: #666666;
+  cursor: pointer;
+  transition: 0.05s ease-in-out;
+}
+.collection-block:active {
+  color: black;
+  fill: black;
+  transition: 0.01s ease-in-out;
+}
+.collection-h1 {
+  font-family: 'Helvetica';
+  font-size: 140px;
+  line-height: 80%;
+  white-space: nowrap;
+}
+.items-section2 {
+  height: calc(50vh - 20px);
+  width: calc(100vw - 40px);
+  background-color: #E0E0E0;
+  border-radius: 20px;
+}
+.items {
+  display: flex;
+  height: calc(100% - 24px);
+  gap: 12px;
+  overflow: hidden;
+  border: 12px solid #E0E0E0;
+  border-radius: 20px;
+}
+.item {
+  width: 400px;
+  min-width: 400px;
+  background-color: white;
+  border-radius: 10px;
+  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+.item-img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  object-fit: cover;
+  z-index: 1;
+}
+.item-text {
+  font-family: 'Helvetica';
+  font-size: 18px;
+  line-height: 102%;
+  color: black;
+  z-index: 2;
+}
+.item-num {
+  margin: 16px 0 0 16px;
+}
+.item-details {
+  margin: 0 0 16px 16px;
+}
+.item-hidden {
+  font-family: 'Helvetica';
+  font-size: 42px;
+  line-height: 90%;
+  margin: 0 0 16px 16px;
+}
+.item:hover {
+  cursor: pointer;
+  background-color: #666666;
+}
+.item:active {
+  background-color: black;
+  transition: 0.01s ease-in-out;
+}
+.item:hover .item-num, .item:active .item-num{
+  color: white;
+}
+.item:hover .item-details,.item:hover .item-img, .item:active .item-img {
+  display: none;
+}
+.item:hover .item-hidden, .item:active .item-hidden {
+  display: block;
+}
+.item-hidden {
+  color: white;
+  display: none;
+}
+
+
+
+/* СОБЫТИЯ */
+.posters {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  bottom: 20px;
+}
+.poster {
+  border-radius: 10px;
+  height: calc(100% - 91px);
+}
+.poster-img {
+  position: absolute;
+  height: calc(100% - 91px);
+  border-radius: 10px;
+  bottom: 20px;
 }

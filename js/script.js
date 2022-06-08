@@ -67,4 +67,12 @@ $(document).ready(function(){
     $(".items-section1").removeClass("items-transform-soft");
     $(".items-section1").removeClass("items-transform-power");
   },function(){});
+
+  // ПОСТЕР
+  $(".button-poster-active").click(function(){
+    $(".poster").css("background-color","black");
+    $(".form").addClass("hidden");
+    $(".form-done").removeClass("hidden");
+    $(".form-done").addClass("visible");
+  });
 });

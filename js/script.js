@@ -1,5 +1,6 @@
 $(document).ready(function(){
   // ITEMS
+  // ПЕРЕКЛЮЧЕНИЕ КОЛЛЕКЦИЙ
   $(".collection-block-sharp").click(function(){
     $(this).addClass("black-color");
     $(".collection-block-soft").removeClass("black-color");
@@ -40,4 +41,30 @@ $(document).ready(function(){
     $(".item-power").css("display","none");
     $(".item-air").css("display","flex");
   });
+
+  // СКРОЛЛ КОЛЛЕКЦИЙ
+  $(".collection-block-sharp").hover(function(){
+    $(".items-section1").addClass("items-transform-sharp");
+    $(".items-section1").removeClass("items-transform-soft");
+    $(".items-section1").removeClass("items-transform-power");
+    $(".items-section1").removeClass("items-transform-air");
+  },function(){});
+  $(".collection-block-soft").hover(function(){
+    $(".items-section1").addClass("items-transform-soft");
+    $(".items-section1").removeClass("items-transform-sharp");
+    $(".items-section1").removeClass("items-transform-power");
+    $(".items-section1").removeClass("items-transform-air");
+  },function(){});
+  $(".collection-block-power").hover(function(){
+    $(".items-section1").addClass("items-transform-power");
+    $(".items-section1").removeClass("items-transform-sharp");
+    $(".items-section1").removeClass("items-transform-soft");
+    $(".items-section1").removeClass("items-transform-air");
+  },function(){});
+  $(".collection-block-air").hover(function(){
+    $(".items-section1").addClass("items-transform-air");
+    $(".items-section1").removeClass("items-transform-sharp");
+    $(".items-section1").removeClass("items-transform-soft");
+    $(".items-section1").removeClass("items-transform-power");
+  },function(){});
 });

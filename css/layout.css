@@ -15,7 +15,6 @@ body, html {
 }
 
 
-
 /* МЕНЮ */
 .menu {
   z-index: 1000;
@@ -293,19 +292,108 @@ body, html {
 
 /* СОБЫТИЯ */
 .posters {
-  margin-left: 20px;
   display: flex;
   flex-direction: row;
+  padding: 71px 20px 20px 20px;
   gap: 12px;
-  bottom: 20px;
 }
 .poster {
+  display: flex;
   border-radius: 10px;
-  height: calc(100% - 91px);
+  background-color: #666666;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  transition: background-color 0.01s ease-in-out;
 }
 .poster-img {
-  position: absolute;
-  height: calc(100% - 91px);
+  height: calc(100vh - 91px);
   border-radius: 10px;
-  bottom: 20px;
+}
+.text-poster {
+  opacity: 0;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  gap: 20px;
+  font-family: 'Helvetica';
+  font-size: 42px;
+  line-height: 90%;
+  color: white;
+  margin: 16px 16px 16px 16px;
+}
+.form {
+  opacity: 0;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  flex-direction: column;
+  gap: 12px;
+  margin: 0 16px 16px 16px;
+}
+.poster:hover .text-poster, .poster:hover .form {
+  opacity: 100;
+}
+.poster:hover .poster-img {
+  opacity: 0;
+}
+.form-done {
+  bottom: 0;
+}
+.hidden {
+  display: none;
+}
+.visible {
+  display: block;
+}
+.button-poster {
+  font-family: 'Helvetica';
+  font-size: 42px;
+  line-height: 90%;
+  color: white;
+  opacity: 40%;
+}
+.button-poster-active {
+  opacity: 100%;
+  cursor: pointer;
+  transition: 0.05s ease-in-out;
+}
+.button-poster-active:hover {
+  opacity: 60%;
+  transition: 0.05s ease-in-out;
+}
+.button-poster-active:active {
+  opacity: 40%;
+  transition: 0.01s ease-in-out;
+}
+.form-input {
+  font-family: 'Helvetica';
+  font-size: 42px;
+  line-height: 90%;
+  color: white;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+.form-input::-webkit-input-placeholder {
+  color: white;
+  opacity: 40%;
+}
+.form-input::-moz-placeholder {
+  color: white;
+  opacity: 40%;
+}
+.form-input:-moz-placeholder {
+  color: white;
+  opacity: 40%;
+}
+.form-input:-ms-input-placeholder {
+  color: white;
+  opacity: 40%;
+}
+.raz {
+  -moz-appearance: textfield;
+}
+.raz::-webkit-inner-spin-button {
+  display: none;
 }

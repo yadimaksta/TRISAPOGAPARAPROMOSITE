@@ -102,17 +102,33 @@ body, html {
 .items-section {
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 51px 20px 20px 20px;
   overflow-x: hidden;
 }
 .items-section1 {
   display: flex;
   flex-direction: row;
   gap: 68px;
-  height: calc(50vh - 20px);
+  height: calc(50vh - 51px);
   align-items: flex-end;
-  overflow-y: hidden;
-  overflow-x: scroll;
+  /* overflow-y: hidden;
+  overflow-x: scroll; */
+}
+.items-transform-sharp {
+  transform: translateX(0);
+  transition: transform .8s cubic-bezier(.4,0,.5,1);
+}
+.items-transform-soft {
+  transform: translateX(-735px);
+  transition: transform .8s cubic-bezier(.4,0,.5,1);
+}
+.items-transform-power {
+  transform: translateX(-1635px);
+  transition: transform .8s cubic-bezier(.4,0,.5,1);
+}
+.items-transform-air {
+  transform: translateX(calc(-3574px + 100vw));
+  transition: transform .8s cubic-bezier(.4,0,.5,1);
 }
 .collection-block {
   display: flex;

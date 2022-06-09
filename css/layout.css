@@ -218,12 +218,12 @@ body, html {
   min-width: 400px;
   background-color: white;
   border-radius: 10px;
-  object-fit: cover;
   flex-direction: column;
   justify-content: space-between;
   position: relative;
   animation: items-move 10s linear infinite;
   animation-play-state: running;
+  overflow: hidden;
 }
 .items:hover .item {
   animation-play-state: paused;
@@ -286,6 +286,81 @@ body, html {
 @keyframes items-move {
   0% {transform: translateX(0px);}
   100% {transform: translateX(-2475px);}
+}
+
+
+
+/* МАГАЗИН */
+.guide-selector-section {
+  display: flex;
+  flex-direction: column;
+  padding: 51px 20px 20px 20px;
+}
+.guide-h1-block {
+  display: flex;
+  height: calc(50vh - 51px);
+  align-items: flex-end;
+  font-family: 'Helvetica';
+  font-size: 140px;
+  line-height: 80%;
+  color: #FD4E2B;
+}
+.guide-h1 {
+  padding-bottom: 28px;
+}
+.guide-selector-block {
+  display: flex;
+  flex-direction: row;
+
+  height: calc(50vh - 20px);
+  width: calc(100vw - 40px);
+  gap: 12px;
+}
+.guide-selector {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(50vh - 20px);
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.guide-selector-img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.guide-selector-h2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: 'Helvetica';
+  font-size: 42px;
+  line-height: 90%;
+  color: white;
+  margin: 16px 16px 16px 16px;
+}
+.guide-selector-text {
+  display: flex;
+  margin: 16px 16px 16px 16px;
+  font-family: 'Helvetica';
+  font-size: 18px;
+  line-height: 102%;
+  color: white;
+  max-width: 424px;
+}
+.guide-selector:hover .guide-selector-img {
+  display: none;
+}
+.guide-selector:hover {
+  background-color: #666666;
+  cursor: pointer;
+}
+.guide-selector:active {
+  transition: 0.01s ease-in-out;
+  background-color: black;
 }
 
 

@@ -83,7 +83,7 @@ body, html {
   bottom: -6px;
   font-family: 'Helvetica';
   font-size: 720px;
-  line-height: 460px;
+  line-height: 80%;
   letter-spacing: -0.02em;
   color: #FD4E2B;
   white-space: nowrap;
@@ -378,7 +378,7 @@ body, html {
   /* overflow-x: hidden; */
 }
 .poster {
-  display: flex;
+  display: inline-flex;
   border-radius: 10px;
   background-color: #666666;
   flex-direction: column;
@@ -390,6 +390,9 @@ body, html {
 .poster-img {
   height: 100%;
   border-radius: 10px;
+}
+.poster-outline {
+  outline: 1px solid #ccc;
 }
 .text-poster {
   opacity: 0;
@@ -473,6 +476,7 @@ body, html {
   border: none;
   background-color: transparent;
   outline: none;
+  padding: 0;
 }
 .form-input::-webkit-input-placeholder {
   color: white;

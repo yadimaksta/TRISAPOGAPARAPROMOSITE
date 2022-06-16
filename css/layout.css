@@ -83,7 +83,7 @@ body, html {
   bottom: -6px;
   font-family: 'Helvetica';
   font-size: 720px;
-  line-height: 80%;
+  line-height: 460px;
   letter-spacing: -0.02em;
   color: #FD4E2B;
   white-space: nowrap;
@@ -366,10 +366,14 @@ body, html {
 
 
 /* СОБЫТИЯ */
+.posters-block {
+  padding: 71px 0 20px 0;
+  display: flex;
+}
 .posters {
   display: flex;
   flex-direction: row;
-  padding: 71px 20px 20px 20px;
+  padding: 0 20px 0 20px;
   gap: 12px;
 }
 .poster {
@@ -380,9 +384,10 @@ body, html {
   justify-content: space-between;
   position: relative;
   transition: background-color 0.01s ease-in-out;
+  height: calc(100vh - 91px);
 }
 .poster-img {
-  height: calc(100vh - 91px);
+  height: 100%;
   border-radius: 10px;
 }
 .text-poster {

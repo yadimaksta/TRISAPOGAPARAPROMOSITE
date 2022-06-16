@@ -1,45 +1,29 @@
 $(document).ready(function(){
   // ITEMS
-  // ПЕРЕКЛЮЧЕНИЕ КОЛЛЕКЦИЙ
+  // ИЗМЕНЕНИЕ ТОВАРОВ
   $(".collection-block-sharp").click(function(){
     $(this).addClass("black-color");
-    $(".collection-block-soft").removeClass("black-color");
-    $(".collection-block-power").removeClass("black-color");
-    $(".collection-block-air").removeClass("black-color");
+    $(".collection-block-soft, .collection-block-power, .collection-block-air").removeClass("black-color");
     $(".item-sharp").css("display","flex");
-    $(".item-soft").css("display","none");
-    $(".item-power").css("display","none");
-    $(".item-air").css("display","none");
+    $(".item-soft, .item-power, .item-air").css("display","none");
   });
   $(".collection-block-soft").click(function(){
     $(this).addClass("black-color");
-    $(".collection-block-sharp").removeClass("black-color");
-    $(".collection-block-power").removeClass("black-color");
-    $(".collection-block-air").removeClass("black-color");
-    $(".item-sharp").css("display","none");
+    $(".collection-block-sharp, .collection-block-power, .collection-block-air").removeClass("black-color");
     $(".item-soft").css("display","flex");
-    $(".item-power").css("display","none");
-    $(".item-air").css("display","none");
+    $(".item-sharp, .item-power, .item-air").css("display","none");
   });
   $(".collection-block-power").click(function(){
     $(this).addClass("black-color");
-    $(".collection-block-soft").removeClass("black-color");
-    $(".collection-block-sharp").removeClass("black-color");
-    $(".collection-block-air").removeClass("black-color");
-    $(".item-sharp").css("display","none");
-    $(".item-soft").css("display","none");
+    $(".collection-block-sharp, .collection-block-soft, .collection-block-air").removeClass("black-color");
     $(".item-power").css("display","flex");
-    $(".item-air").css("display","none");
+    $(".item-sharp, .item-soft, .item-air").css("display","none");
   });
   $(".collection-block-air").click(function(){
     $(this).addClass("black-color");
-    $(".collection-block-soft").removeClass("black-color");
-    $(".collection-block-power").removeClass("black-color");
-    $(".collection-block-sharp").removeClass("black-color");
-    $(".item-sharp").css("display","none");
-    $(".item-soft").css("display","none");
-    $(".item-power").css("display","none");
+    $(".collection-block-sharp, .collection-block-power, .collection-block-soft").removeClass("black-color");
     $(".item-air").css("display","flex");
+    $(".item-sharp, .item-power, .item-soft").css("display","none");
   });
 
   // СКРОЛЛ КОЛЛЕКЦИЙ

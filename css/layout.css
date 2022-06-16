@@ -436,6 +436,20 @@ body, html {
   background-color: transparent;
   text-align: left;
   padding: 0;
+  transition: 0.05s ease-in-out;
+}
+.link {
+  color: white;
+  transition: 0.05s ease-in-out;
+  text-decoration: none;
+}
+.link:hover {
+  opacity: 60%;
+  transition: 0.05s ease-in-out;
+}
+.link:active {
+  opacity: 40%;
+  transition: 0.01s ease-in-out;
 }
 .button-poster-active {
   opacity: 100%;

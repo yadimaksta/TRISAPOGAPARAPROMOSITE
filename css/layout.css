@@ -6,13 +6,17 @@ body, html {
   height: 100vh;
   display: block;
   position: relative;
-  -webkit-user-select: none;
+  /* -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   -o-user-select: none;
-  user-select: none;
+  user-select: none; */
 }
+a {
+  text-decoration: none;
+}
+
 
 
 /* МЕНЮ */
@@ -361,6 +365,119 @@ body, html {
 .guide-selector:active {
   transition: 0.01s ease-in-out;
   background-color: black;
+}
+
+
+
+/* ЛОНГРИД */
+.longread-section {
+  display: flex;
+  flex-direction: column;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px 0 20px;
+}
+.longread-main-block {
+  display: flex;
+  flex-direction: column;
+  padding: 71px 0 20px 0;
+  height: calc(100vh - 91px);
+  align-items: stretch;
+}
+.longread-h1 {
+  font-family: 'Helvetica';
+  font-size: 140px;
+  line-height: 80%;
+  color: #FD4E2B;
+  padding-bottom: 12px;
+  padding-top: 12px;
+}
+.longread-content {
+  padding: 40px 118px 0 118px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.longread-h2 {
+  font-family: 'Helvetica';
+  font-size: 42px;
+  line-height: 90%;
+  color: #FD4E2B;
+  padding-bottom: 12px;
+  max-width: 1118px;
+}
+.longread-body {
+  font-family: 'Helvetica';
+  font-size: 18px;
+  line-height: 102%;
+  color: #666666;
+  max-width: 640px;
+}
+.longread-main-img {
+  flex-grow: 1;
+  width: 100%;
+  border-radius: 10px;
+  height: 100px;
+  max-width: 1400px;
+  object-fit: cover;
+}
+.longread-big-img {
+  margin-top: 60px;
+  width: 100%;
+  border-radius: 10px;
+  height: 800px;
+  max-width: 1400px;
+  object-fit: cover;
+}
+.icons-block {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+.hall-row-block {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+.hall-row-img-block {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+.longread-small-img {
+  width: 100%;
+  border-radius: 10px;
+  height: 340px;
+  max-width: 752px;
+  object-fit: cover;
+}
+.longread-small-img-2 {
+  border-radius: 10px;
+  height: 440px;
+  object-fit: cover;
+}
+.plan {
+  stroke: #666666;
+}
+.longread-body-hall {
+  max-width: 241px;
+}
+.longread-h2-hall {
+  max-width: 820px;
+}
+.longread-h2-payment {
+  max-width: 900px;
+}
+.payment-col-block {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.payment-row-block {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 50px;
 }
 
 

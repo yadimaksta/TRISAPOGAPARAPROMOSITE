@@ -52,11 +52,42 @@ $(document).ready(function(){
     $(".items-section1").removeClass("items-transform-power");
   },function(){});
 
-  // ПОСТЕР
-  $(".button-poster-active").click(function(){
-    $(".poster").css("background-color","black");
-    $(".form").addClass("hidden");
-    $(".form-done").removeClass("hidden");
-    $(".form-done").addClass("visible");
+  // EVENTS
+  // РЕГИСТРАЦИЯ
+  $(".button-poster-active-1").click(function(){
+    $(".poster-1").css("background-color","black");
+    $(".form-1").addClass("hidden");
+    $(".form-done-1").removeClass("hidden");
+    $(".form-done-1").addClass("visible");
+  });
+  $(".button-poster-active-2").click(function(){
+    $(".poster-2").css("background-color","black");
+    $(".form-2").addClass("hidden");
+    $(".form-done-2").removeClass("hidden");
+    $(".form-done-2").addClass("visible");
+  });
+  $(".button-poster-active-3").click(function(){
+    $(".poster-3").css("background-color","black");
+    $(".form-3").addClass("hidden");
+    $(".form-done-3").removeClass("hidden");
+    $(".form-done-3").addClass("visible");
+  });
+  $(".button-poster-active-4").click(function(){
+    $(".poster-4").css("background-color","black");
+    $(".form-4").addClass("hidden");
+    $(".form-done-4").removeClass("hidden");
+    $(".form-done-4").addClass("visible");
+  });
+  $(".button-poster-active-5").click(function(){
+    $(".poster-5").css("background-color","black");
+    $(".form-5").addClass("hidden");
+    $(".form-done-5").removeClass("hidden");
+    $(".form-done-5").addClass("visible");
+  });
+  $(".button-poster-active-6").click(function(){
+    $(".poster-6").css("background-color","black");
+    $(".form-6").addClass("hidden");
+    $(".form-done-6").removeClass("hidden");
+    $(".form-done-6").addClass("visible");
   });
 });

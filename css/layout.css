@@ -16,14 +16,11 @@ body, html {
 a {
   text-decoration: none;
 }
-
-
-
-/* МЕНЮ */
 .menu {
   z-index: 1000;
 }
 .logo {
+  z-index: 1000;
   position: fixed;
   display: flex;
   padding: 8px 9px;
@@ -77,6 +74,9 @@ a {
   top: 20px;
   right: 20px;
 }
+.menu-mobile {
+  display: none;
+}
 
 
 
@@ -92,6 +92,9 @@ a {
   color: #FD4E2B;
   white-space: nowrap;
   animation: index-h1-move 12s linear infinite;
+}
+.index-h1-mobile {
+  display: none;
 }
 @keyframes index-h1-move {
   0% {left: 20px}

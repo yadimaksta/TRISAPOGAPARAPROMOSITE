@@ -16,8 +16,6 @@
   }
 }
 
-
-
 /* ГЛАВНАЯ */
 @media only screen and (max-width: 1023px) {
   .index-h1 {
@@ -30,5 +28,74 @@
     bottom: 60px;
     white-space: normal;
     animation: none;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .index-h1-mobile {
+    display: block;
+    font-size: 130px;
+    left: 14px;
+    bottom: 60px;
+    white-space: normal;
+    animation: none;
+  }
+}
+
+/* КАТАЛОГ */
+@media only screen and (max-width: 1366px) {
+  .items-section1 {
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+  .items-transform-sharp {
+    transform: none;
+  }
+  .items-transform-soft {
+    transform: none;
+  }
+  .items-transform-power {
+    transform: none;
+  }
+  .items-transform-air {
+    transform: none;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .items-section {
+    padding: 14px 14px 0 14px;
+  }
+  .items-section2 {
+    width: calc(100vw - 28px);
+  }
+}
+
+/* МАГАЗИН */
+@media only screen and (max-width: 1023px) {
+  .guide-selector-section {
+    padding: 14px 14px 0 14px;
+  }
+  .guide-selector-block {
+    width: calc(100vw - 28px);
+    flex-direction: column;
+    height: calc(65vh - 20px);
+  }
+  .guide-h1-block {
+    height: calc(35vh - 51px);
+  }
+  .guide-selector-text {
+    display: none;
+  }
+}
+
+/* СОБЫТИЯ */
+@media only screen and (max-width: 1023px) {
+  .posters-block {
+    padding: 14px 14px 0 0;
+  }
+  .posters {
+    padding: 0 14px 0 14px;
+  }
+  .poster {
+    height: calc(100vh - 73px);
   }
 }

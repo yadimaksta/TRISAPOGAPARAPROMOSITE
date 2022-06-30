@@ -90,4 +90,26 @@ $(document).ready(function(){
     $(".form-done-6").removeClass("hidden");
     $(".form-done-6").addClass("visible");
   });
+
+  // МОБИЛЬНОЕ МЕНЮ
+  $("#menu-open").click(function(){
+    $("#menu-open, .index-h1-mobile").css("display","none");
+    $("#menu-close, .menu-fullscreen").css("display","block");
+    $(".menu-buttons, .logo").css({
+      transition: "none",
+      fill: "#FD4E2B",
+      color: "#FD4E2B",
+      background: "#FFFFFF",
+    })
+  });
+  $("#menu-close").click(function(){
+    $("#menu-open, .index-h1-mobile").css("display","block");
+    $("#menu-close, .menu-fullscreen").css("display","none");
+    $(".menu-buttons, .logo").css({
+      transition: "none",
+      fill: "#FFFFFF",
+      color: "#FFFFFF",
+      background: "#FD4E2B",
+    })
+  });
 });

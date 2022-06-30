@@ -29,6 +29,7 @@ a {
   background: #FD4E2B;
   border-radius: 8px;
   transition: 0.05s ease-in-out;
+  fill: #FFFFFF;
 }
 .logo:hover {
   background: #666666;
@@ -76,6 +77,7 @@ a {
 }
 .menu-mobile {
   display: none;
+  z-index: 1000;
 }
 
 
@@ -95,6 +97,29 @@ a {
 }
 .index-h1-mobile {
   display: none;
+}
+.menu-fullscreen {
+  z-index: 500;
+  background-color: #FD4E2B;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+}
+.menu-mobile-text-block {
+  position: absolute;
+  left: 14px;
+  bottom: 62px;
+}
+.menu-mobile-text {
+  font-family: 'Helvetica';
+  font-size: 60px;
+  line-height: 86%;
+  color: #FFFFFF;
+  transition: 0.05s ease-in-out;
+}
+.menu-mobile-text:active {
+  opacity: 60%;
+  transition: 0.05s ease-in-out;
 }
 @keyframes index-h1-move {
   0% {left: 20px}
